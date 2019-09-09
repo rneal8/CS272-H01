@@ -5,18 +5,34 @@
 package occ.cs272.h01;
 
 /**
- * @author <your OCC login name such as sgilbert>
- * @version <the date>
+ * @author rneal8
+ * @version 9/9/19
  *
  */
 public class RoachPopulation
 {
-    // TODO: You must fill these in correctly to get credit
-    public static final String STUDENT = "Put your login ID here";
+    public static final String STUDENT = "rneal8";
     public static final String ASSIGNMENT = "H01-A";
+    
+    private int population;
 
-    // TODO: Complete the RoachPopulation class
+    public RoachPopulation(int startPop)
+    {
+        population = startPop;    
+    }
     
+    public void breed()
+    {
+        population = population * 2;
+    }
     
+    public void spray()
+    {
+        population = population - population / 10;
+    }
     
+    public int getRoaches()
+    {
+        return population;
+    }
 }
